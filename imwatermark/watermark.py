@@ -51,7 +51,7 @@ class WatermarkEncoder(object):
         self._wmLen = len(self._watermarks)
         self._wmType = 'bits'
 
-    def set_watermark(self, wmType='bytes', content=''):
+    def set_watermark(self, wmType='bytes', content=''): # добавить цифровой водяной знак
         if wmType == 'ipv4':
             self.set_by_ipv4(content)
         elif wmType == 'uuid':
